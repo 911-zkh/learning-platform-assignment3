@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPA fallback: save the full path and redirect to root
+      // Vue Router (history mode) will then handle /assignment3 etc.
+      (function() {
+        var path = window.location.pathname + window.location.search + window.location.hash;
+        // Don't redirect if already at root
+        if (path === '/learning-platform-assignment3/' || path === '/learning-platform-assignment3') {
+          return;
+        }
+        // Store the intended path
+        sessionStorage.setItem('spa-redirect', path);
+        // Redirect to the GitHub Pages root
+        window.location.replace('/learning-platform-assignment3/');
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
